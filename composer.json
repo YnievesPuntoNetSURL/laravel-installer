@@ -1,0 +1,36 @@
+{
+    "name": "ynievespuntonetsurl/laravel-installer",
+    "description": "Laravel Web Installer | A Web Installer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "YnievesPuntoNet S.U.R.L",
+            "homepage": "https://www.ynieves.net",
+            "role": "Maintainer",
+            "email": "ynieves@ynieves.net"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "YnievesPuntoNetSURL\\LaravelInstaller\\": "src/"
+        },
+        "files": [
+            "src/Helpers/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                    "YnievesPuntoNetSURL\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider"
+
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability" : "dev"
+}
